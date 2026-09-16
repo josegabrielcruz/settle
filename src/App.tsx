@@ -40,7 +40,7 @@ export default function App() {
       <header className="app-header">
         <div className="wordmark">
           <span className="wordmark-name">Settle</span>
-          <span className="wordmark-tagline">The easing tool that visualizes springs</span>
+          <span className="wordmark-tagline">The easing tool workbench</span>
         </div>
       </header>
 
