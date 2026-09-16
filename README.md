@@ -4,7 +4,7 @@
 
 Visualize spring physics and cubic-bezier curves side-by-side, preview them on real UI patterns, and export to CSS, Framer Motion, GSAP, or React Spring — one config, four formats.
 
-**[Live Demo](https://josegabrielcruz.github.io/settle)**
+**[Live →](https://josegabrielcruz.github.io/settle/)**
 
 ---
 
@@ -93,6 +93,12 @@ Cubic-bezier presets like `ease-out-back` and `anticipate` produce values outsid
 
 **Why `transform` and `opacity` only for element previews?**
 Animating `left`, `top`, or `translateX(%)`-based positioning that recalculates layout on every RAF frame is expensive. All element position interpolation uses `transform: translateX/Y` with inline `calc()`, keeping all animation on the compositor thread.
+
+---
+
+## License
+
+MIT — use it, fork it, learn from it.
 
 ---
 
