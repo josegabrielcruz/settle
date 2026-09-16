@@ -1,0 +1,120 @@
+@import '../../styles/tokens.css';
+
+.spring-editor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.editor-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.editor-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.editor-kind {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-2);
+  flex: 1;
+}
+
+.spring-duration {
+  font-size: 10px;
+  color: var(--text-3);
+  font-family: var(--font-mono);
+}
+
+.editor-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.preset-btn {
+  padding: 3px 8px;
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-2);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  transition: border-color var(--duration-fast), color var(--duration-fast);
+}
+
+.preset-btn:hover {
+  border-color: var(--border-2);
+  color: var(--text);
+}
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.slider-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 40px;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.slider-label {
+  font-size: 11px;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+}
+
+.slider-value {
+  font-size: 11px;
+  color: var(--text);
+  font-family: var(--font-mono);
+  text-align: right;
+}
+
+.spring-explainer {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--text-3);
+  border-left: 2px solid var(--color-spring-dim);
+  padding-left: var(--space-3);
+}
+
+.spring-character {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-spring-dim);
+  border-left: 2px solid var(--color-spring);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.spring-character-warn {
+  background: rgba(251 191 36 / 0.08);
+  border-left-color: #f59e0b;
+}
+
+.spring-character-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-spring);
+}
+
+.spring-character-warn .spring-character-label {
+  color: #f59e0b;
+}
+
+.spring-character-note {
+  font-size: 10px;
+  color: var(--text-3);
+}

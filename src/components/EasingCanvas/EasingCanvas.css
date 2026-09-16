@@ -1,0 +1,12 @@
+.easing-canvas-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: inline-block;
+  line-height: 0;
+}
+
+.easing-canvas-wrap canvas {
+  display: block;
+}

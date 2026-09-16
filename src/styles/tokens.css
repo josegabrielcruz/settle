@@ -1,0 +1,59 @@
+:root {
+  /* ─── Backgrounds ─────────────────────────────────────────── */
+  --bg:        #0d0d14;
+  --surface:   #13131c;
+  --surface-2: #1a1a26;
+  --surface-3: #222232;
+
+  /* ─── Borders ─────────────────────────────────────────────── */
+  --border:    rgba(255 255 255 / 0.07);
+  --border-2:  rgba(255 255 255 / 0.12);
+
+  /* ─── Text ────────────────────────────────────────────────── */
+  --text:      #e8e8f0;
+  --text-2:    #9090a8;
+  --text-3:    #5a5a72;
+
+  /* ─── Curve accent colors ─────────────────────────────────── */
+  /* green = deterministic, fixed-duration curves */
+  --color-curve:        #4ade80;
+  --color-curve-dim:    rgba(74 222 128 / 0.15);
+  --color-curve-glow:   rgba(74 222 128 / 0.4);
+
+  /* pink = organic, physics-based springs */
+  --color-spring:       #f472b6;
+  --color-spring-dim:   rgba(244 114 182 / 0.15);
+  --color-spring-glow:  rgba(244 114 182 / 0.4);
+
+  /* ─── UI accent ───────────────────────────────────────────── */
+  --accent:      #7c6dfa;
+  --accent-dim:  rgba(124 109 250 / 0.15);
+
+  /* ─── Typography ──────────────────────────────────────────── */
+  --font-mono: 'IBM Plex Mono', 'Fira Code', 'Cascadia Code', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* ─── Spacing scale ───────────────────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* ─── Radius ──────────────────────────────────────────────── */
+  --radius-sm: 4px;
+  --radius:    8px;
+  --radius-lg: 12px;
+
+  /* ─── Shadows ─────────────────────────────────────────────── */
+  --shadow-sm: 0 1px 3px rgba(0 0 0 / 0.4);
+  --shadow:    0 4px 16px rgba(0 0 0 / 0.5);
+
+  /* ─── Motion ──────────────────────────────────────────────── */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+}

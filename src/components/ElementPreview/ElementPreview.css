@@ -1,0 +1,209 @@
+/* ── Wrapper ─────────────────────────────────────────────────── */
+
+.ep-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.ep-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.ep-label-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ep-label-text {
+  font-size: 11px;
+  color: var(--text-2);
+}
+
+/* ── Stage (clipping container) ──────────────────────────────── */
+
+.ep-stage {
+  position: relative;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.ep-stage-modal {
+  height: 200px;
+}
+
+.ep-stage-drawer {
+  height: 200px;
+}
+
+.ep-stage-toast {
+  height: 80px;
+}
+
+/* ── Scrim (modal backdrop) ──────────────────────────────────── */
+
+.ep-scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0 0 0 / 1);
+  pointer-events: none;
+}
+
+/* ── Modal card ──────────────────────────────────────────────── */
+
+.ep-modal-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform is set inline; translateX(-50%) translateY(calc(-50% + offset)) */
+  width: calc(100% - 24px);
+  background: var(--surface-3);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.ep-modal-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+
+.ep-modal-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ep-modal-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.ep-modal-body {
+  font-size: 11px;
+  color: var(--text-2);
+  padding: var(--space-3) var(--space-4);
+  line-height: 1.5;
+}
+
+.ep-modal-actions {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: flex-end;
+  padding: var(--space-2) var(--space-3) var(--space-3);
+}
+
+.ep-btn {
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  cursor: default;
+}
+
+.ep-btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border-2);
+  color: var(--text-2);
+}
+
+.ep-btn-primary {
+  border: none;
+  color: var(--bg);
+  font-weight: 600;
+}
+
+/* ── Drawer panel ────────────────────────────────────────────── */
+
+.ep-drawer-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 65%;
+  background: var(--surface-3);
+  border-right: 1px solid var(--border-2);
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-drawer-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+}
+
+.ep-drawer-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ep-drawer-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.ep-drawer-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0 var(--space-4);
+}
+
+.ep-drawer-nav {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-2) 0;
+}
+
+.ep-drawer-item {
+  padding: var(--space-2) var(--space-4);
+  font-size: 11px;
+  color: var(--text-2);
+}
+
+/* ── Toast ───────────────────────────────────────────────────── */
+
+.ep-toast {
+  position: absolute;
+  top: var(--space-3);
+  left: 50%;
+  /* transform set inline: translateX(-50%) translateY(offset) */
+  width: calc(100% - 24px);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface-3);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.ep-toast-icon {
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.ep-toast-text {
+  font-size: 11px;
+  color: var(--text-2);
+}
