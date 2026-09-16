@@ -4,6 +4,8 @@
 
 Visualize spring physics and cubic-bezier curves side-by-side, preview them on real UI patterns, and export to CSS, Framer Motion, GSAP, or React Spring — one config, four formats.
 
+**[Live Demo](https://josegabrielcruz.github.io/settle)**
+
 ---
 
 ## The problem this solves
